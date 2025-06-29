@@ -1,25 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-15T14:46:50 IST" name="Web Automation Suite" finished-at="2025-06-15T14:47:04 IST" duration-ms="14186">
+  <suite started-at="2025-06-29T19:22:06 IST" name="Default suite" finished-at="2025-06-29T19:22:12 IST" duration-ms="6169">
     <groups>
     </groups>
-    <test started-at="2025-06-15T14:46:50 IST" name="Login Test" finished-at="2025-06-15T14:47:04 IST" duration-ms="14186">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6adbc9d]" started-at="2025-06-15T14:46:50 IST" name="setup" finished-at="2025-06-15T14:47:03 IST" duration-ms="12701" status="PASS">
+    <test started-at="2025-06-29T19:22:06 IST" name="Default test" finished-at="2025-06-29T19:22:12 IST" duration-ms="6169">
+      <class name="tests.EndToEndTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EndToEndTest@7f0eb4b4]" started-at="2025-06-29T19:22:06 IST" name="setup" finished-at="2025-06-29T19:22:10 IST" duration-ms="4003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testValidLogin()[pri:0, instance:tests.LoginTest@6adbc9d]" started-at="2025-06-15T14:47:03 IST" name="testValidLogin" finished-at="2025-06-15T14:47:04 IST" duration-ms="996" status="PASS">
+        <test-method signature="completePurchaseFlow()[pri:0, instance:tests.EndToEndTest@7f0eb4b4]" started-at="2025-06-29T19:22:10 IST" name="completePurchaseFlow" finished-at="2025-06-29T19:22:12 IST" duration-ms="1757" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Order not completed successfully! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Order not completed successfully! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.EndToEndTest.completePurchaseFlow(EndToEndTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6adbc9d]" started-at="2025-06-15T14:47:04 IST" name="tearDown" finished-at="2025-06-15T14:47:04 IST" duration-ms="387" status="PASS">
+        </test-method> <!-- completePurchaseFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@7f0eb4b4]" started-at="2025-06-29T19:22:12 IST" name="tearDown" finished-at="2025-06-29T19:22:12 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginTest -->
-    </test> <!-- Login Test -->
-  </suite> <!-- Web Automation Suite -->
+      </class> <!-- tests.EndToEndTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
